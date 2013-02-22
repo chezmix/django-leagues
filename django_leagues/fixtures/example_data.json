@@ -1,0 +1,112 @@
+[
+    {
+        "pk": 1, 
+        "model": "django_leagues.player", 
+        "fields": {
+            "user": 1
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "django_leagues.player", 
+        "fields": {
+            "user": 2
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "django_leagues.player", 
+        "fields": {
+            "user": 3
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "django_leagues.player", 
+        "fields": {
+            "user": 4
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "django_leagues.league", 
+        "fields": {
+            "players": [
+                1, 
+                2, 
+                3, 
+                4
+            ], 
+            "name": "NFL"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "django_leagues.season", 
+        "fields": {
+            "started": true, 
+            "league": 1, 
+            "name": "Fall", 
+            "players": [
+                1, 
+                2, 
+                3, 
+                4
+            ]
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "django_leagues.match", 
+        "fields": {
+            "match_date": "2013-02-16T22:07:43Z", 
+            "season": 1, 
+            "players": [
+                1, 
+                2, 
+                3
+            ]
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "django_leagues.match", 
+        "fields": {
+            "match_date": "2013-02-21T05:00:00Z", 
+            "season": 1, 
+            "players": [
+                1, 
+                2, 
+                3, 
+                4
+            ]
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "django_leagues.matchresult", 
+        "fields": {
+            "player": 1, 
+            "score": 51, 
+            "match": 1
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "django_leagues.matchresult", 
+        "fields": {
+            "player": 2, 
+            "score": 9, 
+            "match": 2
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "django_leagues.matchresult", 
+        "fields": {
+            "player": 3, 
+            "score": 31, 
+            "match": 2
+        }
+    }
+]
